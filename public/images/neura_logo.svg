@@ -1,0 +1,35 @@
+<svg width="46" height="44" viewBox="0 0 46 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Neural Network forming "N" shape -->
+  
+  <!-- Left vertical line nodes -->
+  <circle cx="12" cy="10" r="3" fill="#7C3AED"/>
+  <circle cx="12" cy="22" r="3" fill="#7C3AED"/>
+  <circle cx="12" cy="34" r="3" fill="#7C3AED"/>
+  
+  <!-- Right vertical line nodes -->
+  <circle cx="34" cy="10" r="3" fill="#7C3AED"/>
+  <circle cx="34" cy="22" r="3" fill="#7C3AED"/>
+  <circle cx="34" cy="34" r="3" fill="#7C3AED"/>
+  
+  <!-- Diagonal connection nodes -->
+  <circle cx="23" cy="16" r="2.5" fill="#A78BFA"/>
+  <circle cx="23" cy="28" r="2.5" fill="#A78BFA"/>
+  
+  <!-- Connection lines -->
+  <line x1="12" y1="10" x2="12" y2="34" stroke="#7C3AED" stroke-width="2" opacity="0.3"/>
+  <line x1="34" y1="10" x2="34" y2="34" stroke="#7C3AED" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Diagonal connections forming "N" -->
+  <line x1="12" y1="10" x2="23" y2="16" stroke="#A78BFA" stroke-width="2" opacity="0.4"/>
+  <line x1="23" y1="16" x2="34" y2="22" stroke="#A78BFA" stroke-width="2" opacity="0.4"/>
+  <line x1="12" y1="22" x2="23" y2="28" stroke="#A78BFA" stroke-width="2" opacity="0.4"/>
+  <line x1="23" y1="28" x2="34" y2="34" stroke="#A78BFA" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Glow effect on main nodes -->
+  <circle cx="12" cy="10" r="3" fill="#7C3AED" opacity="0.5">
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="34" cy="34" r="3" fill="#7C3AED" opacity="0.5">
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+</svg>
